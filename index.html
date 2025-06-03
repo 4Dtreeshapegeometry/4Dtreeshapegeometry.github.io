@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Riemannian Framework for the Elastic  Analysis  of the Spatiotemporal Variability in the Shape and Structure of Tree-like 4D Objects">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Riemannian Framework for the Elastic  Analysis  of the Spatiotemporal Variability in the Shape and Structure of Tree-like 4D Objects</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">A Riemannian Framework for the Elastic  Analysis  of the Spatiotemporal Variability in the Shape and Structure of Tree-like 4D Objects</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Tahmina Khanam</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Hamid Laga</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Mohammed Bennamoun</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Guanjin Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Ferdous Sohel</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Farid Boussaid</a><sup>2</sup>,
+            </span>
+	    <span class="author-block">
+              <a href="">Anuj Srivastava </a><sup>3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Murdoch University,</span>
+            <span class="author-block"><sup>2</sup>University of Western Australia</span>
+            <span class="author-block"><sup>3</sup>Florida State University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Tahmina979/4Dtree_shape_with_geometry"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+      
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample1_after_reg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample2_after_reg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample10_after_reg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample4_after_reg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample5_after_reg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample6_after_reg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample7_after_reg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample8_after_reg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample3_after_reg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample9_after_reg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          This paper presents a novel computational framework for modelling and analyzing the spatiotemporal shape variability in tree-like 4D objects, i.e.,  3D objects whose shape deforms over time. Tree-like 3D objects, such as botanical trees and plants, deform and grow at different rates. In this process, they bend and stretch their branches and change their branching structure, making their spatiotemporal registration challenging. We address this problem using a Riemannian approach that treats tree-like 3D objects as points in a tree-shape space equipped with a proper metric that quantifies branch bending and stretching as well as topological changes. A 4D tree-like object can then be seen as a trajectory in this space. Thus, the problem of modelling and analyzing the spatiotemporal variability in tree-like 4D objects becomes that of analyzing trajectories embedded in this space. However, performing the spatiotemporal registration and subsequently computing geodesics and statistics on the tree-shape space, which is nonlinear, is not straightforward, as these tasks rely on complex nonlinear optimizations. Our core contribution is the mapping of the tree-like 3D objects to the space of the Extended Square Root Velocity Field (ESRVF) where the complex elastic metric is reduced to the L2 metric. By solving the spatial registration in the ESRVF space, the problem of analyzing tree-like 4D objects becomes that of analyzing elastic trajectories embedded in the ESRVF space.  In this paper, we develop the building blocks that enable such analysis. These include: (1) the spatiotemporal registration of tree-like 4D objects in the presence of large elastic shape deformations, large topological differences, and large variations in their growth rates; (2) the computation of geodesics between tree-like 4D objects; (3) the computation of statistical summaries such as means and modes of variation; and (4) the synthesis of random tree-like 4D objects. We demonstrate the efficiency of the proposed framework using simulated 4D botanical tree models as well as real plants.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+</section>
+
+<section class="section">
+
+<div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Before spatial registration</h2>
+        <div class="item item-shiba" id="video-container_half">
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample1.mp4"
+                    type="video/mp4">
+          </video>
+          
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample2.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample3.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample4.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample5.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample6.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample7.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample8.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample9.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/sample10.mp4"
+                    type="video/mp4">
+          </video>
+          </div>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3">After spatial registration</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+        <div class="item item-shiba" id="video-container_half">
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/sample1_after_reg.mp4"
+                      type="video/mp4">
+            </video>
+            
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/sample2_after_reg.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/sample3_after_reg.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/sample4_after_reg.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/sample5_after_reg.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/sample6_after_reg.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/sample7_after_reg.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/sample8_after_reg.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/sample9_after_reg.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/sample10_after_reg.mp4"
+                      type="video/mp4">
+            </video>
+        </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+    <!-- Re-rendering. -->
+        <h3 class="title is-4">Mean 4D tree shapes of three sets</h3>
+
+        <section class="hero is-light is-small">
+          <div class="hero-body">
+            <div class="container">
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-shiba">
+                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mean_set1.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-fullbody">
+                  <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mean_set2.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mean_set3.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-mask">
+                    <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/videos/mean_set1.mp4"
+                              type="video/mp4">
+                    </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+    <!-- Re-rendering. -->
+        <h3 class="title is-4">Modes of variation in three sets</h3>
+
+        <section class="hero is-light is-small">
+          <div class="hero-body">
+            <div class="container">
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-shiba">
+                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode1_set1.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-shiba">
+                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode1_set2.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-fullbody">
+                  <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode1_set3.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode2_set1.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode2_set2.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode2_set3.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode3_set1.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode3_set2.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-mask">
+                    <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/videos/mode3_set3.mp4"
+                              type="video/mp4">
+                    </video>
+                </div>
+                
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode5_set1.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode5_set2.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-mask">
+                    <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/videos/mode5_set3.mp4"
+                              type="video/mp4">
+                    </video>
+                </div>
+                
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode6_set1.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode6_set2.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-mask">
+                    <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/videos/mode6_set3.mp4"
+                              type="video/mp4">
+                    </video>
+                </div>
+                
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode7_set1.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-blueshirt">
+                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/mode7_set2.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-mask">
+                    <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/videos/mode7_set3.mp4"
+                              type="video/mp4">
+                    </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">4D Geodesic before spatiotemporal registration</h3>
+        <div class="content has-text-justified">
+          <p>
+           We notice significant shrinkage before spatiotemporal registration.
+          </p>
+        </div>
+     
+        <div class="item item-shiba" id="video-container">
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_2_3_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_5_10_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_7_10_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_1_6_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_1_2_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_1_4_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+	<!-- Re-rendering. -->
+    
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">4D Geodesic after spatiotemporal registration</h3>
+        <div class="content has-text-justified">
+          <p>
+           We notice natural deforamtion between two growing 4D plants after spatiotemporal registration. 
+          </p>
+        </div>
+      
+     <div class="item item-shiba" id="video-container">
+               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                 <source src="./static/videos/videos/geod_2_3_after_reg-ezgif.com-crop-video.mp4"
+                         type="video/mp4">
+               </video>
+               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                 <source src="./static/videos/videos/geod_5_10_after_reg-ezgif.com-crop-video.mp4"
+                         type="video/mp4">
+               </video>
+               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                 <source src="./static/videos/videos/geod_7_10_after_reg-ezgif.com-crop-video.mp4"
+                         type="video/mp4">
+               </video>
+               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                 <source src="./static/videos/videos/geod_1_6_after_reg-ezgif.com-crop-video.mp4"
+                         type="video/mp4">
+               </video>
+             <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+               <source src="./static/videos/videos/geod_1_2_after_reg-ezgif.com-crop-video.mp4"
+                       type="video/mp4">
+             </video>
+             <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+               <source src="./static/videos/videos/geod_1_4_after_reg-ezgif.com-crop-video.mp4"
+                       type="video/mp4">
+             </video>
+             </div>
+
+        <!--/ Re-rendering. -->
+      </div>
+    </div>
+        
+    <!--/ Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+    <!-- Re-rendering. -->
+        <h3 class="title is-4">Generated 4D tree models</h3>
+
+        <section class="hero is-light is-small">
+          <div class="hero-body">
+            <div class="container">
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-shiba">
+                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/sample1_from_set1.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-shiba">
+                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/sample1_from_set2.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-shiba">
+                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/sample1_from_set3.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-shiba">
+                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/videos/sample2_from_set1.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+    
+  </div>
+</section>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{,
+  author    = {Tahmina Khanam, Hamid Laga, Mohammed Bennamoun, Guanjin Wang, Ferdous Sohel, Farid Boussaid, Anuj Srivastava},
+  title     = {A Riemannian Framework for the Elastic  Analysis  of the Spatiotemporal Variability in the Shape and Structure of Tree-like 4D Objects},
+  journal   = {},
+  year      = {},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/Tahmina979/4Dtree_shape_with_geometry" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            We use the website template of <a rel="license" href="https://github.com/nerfies/nerfies.github.io">nerfies</a>. We would like to thank the team to make this template publicly available
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
