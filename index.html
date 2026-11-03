@@ -38,6 +38,35 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <style>
+    /* Styles scoped to the mean, modes, and generated video sections. */
+    .research-video-section { margin: 3rem 0; }
+    .research-video-heading { text-align: center; font-weight: 700; }
+    .research-video-intro { text-align: center; margin: 0 auto 1.5rem; }
+    .research-video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .research-video-card { margin: 0; min-width: 0; }
+    .research-video-label {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.5;
+      margin: 0 0 0.75rem;
+    }
+    .research-video-card video {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: white;
+    }
+    @media screen and (max-width: 767px) {
+      .research-video-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
@@ -314,214 +343,222 @@
       </div>
     </div>
     <!--/ Matting. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-    <!-- Re-rendering. -->
-        <h3 style="text-align: center; font-weight: bold;>Mean 4D tree shapes of three sets</h3>
-
-        <!--section class="hero is-light is-small"-->
-          <div class="hero-body">
-            <div class="container">
-              <div id="results-carousel" class="carousel results-carousel">
-                <div class="item item-shiba">
-                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mean_set1.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-fullbody">
-                  <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mean_set2.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mean_set3.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        <!--/section-->
+    <section class="research-video-section" id="mean-results" aria-labelledby="mean-results-title">
+      <!-- Edit the heading and paragraph below to change the section message. -->
+      <h3 class="title is-4 research-video-heading" id="mean-results-title">Mean growth trajectories computed for each dataset.</h3>
+      <div class="research-video-grid">
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 1: mean 4D tree</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 1: mean 4D tree">
+              <source src="./static/videos/videos/mean_set1.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 2: mean 4D tree</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 2: mean 4D tree">
+              <source src="./static/videos/videos/mean_set2.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 3: mean 4D tree</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 3: mean 4D tree">
+              <source src="./static/videos/videos/mean_set3.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
       </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-    <!-- Re-rendering. -->
-        <h3 style="text-align: center; font-weight: bold;">Modes of variation in the first principal direction of three sets</h3>
+    </section>
 
-        <section class="hero is-light is-small">
-          <div class="hero-body">
-            <div class="container">
-              <div id="results-carousel" class="carousel results-carousel">
-				  <h4 style="text-align: center; font-weight: bold;>std. +1.5 (set1)</h4>
-                <div class="item item-shiba">
-					
-                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode1_set1.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-				  <h4 style="text-align: center; font-weight: bold;>std. +1.5 (set2)</h4>
-                <div class="item item-shiba">
-                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode1_set2.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-			    <h4 style="text-align: center; font-weight: bold;>std. +1.5 (set3)</h4>
-                <div class="item item-fullbody">
-                  <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode1_set3.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode2_set1.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode2_set2.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode2_set3.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode3_set1.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode3_set2.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-mask">
-                    <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                      <source src="./static/videos/videos/mode3_set3.mp4"
-                              type="video/mp4">
-                    </video>
-                </div>
-                
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode5_set1.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode5_set2.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-mask">
-                    <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                      <source src="./static/videos/videos/mode5_set3.mp4"
-                              type="video/mp4">
-                    </video>
-                </div>
-                
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode6_set1.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode6_set2.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-mask">
-                    <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                      <source src="./static/videos/videos/mode6_set3.mp4"
-                              type="video/mp4">
-                    </video>
-                </div>
-                
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode7_set1.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-blueshirt">
-                  <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/mode7_set2.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-mask">
-                    <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                      <source src="./static/videos/videos/mode7_set3.mp4"
-                              type="video/mp4">
-                    </video>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    <section class="research-video-section" id="mode-results" aria-labelledby="mode-results-title">
+      <!-- Edit the heading and paragraph below to change the section message. -->
+      <h3 class="title is-4 research-video-heading" id="mode-results-title">Modes of variation in the first principal direction of each set</h3>
+      <p class="research-video-intro">Each row shows at a specific std. value across three sets.</p>
+      <div class="research-video-grid">
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 1: std. +1.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 1: variation 1">
+              <source src="./static/videos/videos/mode1_set1.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 2: std. +1.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 2: variation 1">
+              <source src="./static/videos/videos/mode1_set2.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 3: std. +1.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 3: variation 1">
+              <source src="./static/videos/videos/mode1_set3.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 1: std. +1</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 1: variation 2">
+              <source src="./static/videos/videos/mode2_set1.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 2: std. +1</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 2: variation 2">
+              <source src="./static/videos/videos/mode2_set2.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 3: std. +1</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 3: variation 2">
+              <source src="./static/videos/videos/mode2_set3.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 1: std. +0.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 1: variation 3">
+              <source src="./static/videos/videos/mode3_set1.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 2: std. +0.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 2: variation 3">
+              <source src="./static/videos/videos/mode3_set2.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 3: std. +0.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 3: variation 3">
+              <source src="./static/videos/videos/mode3_set3.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 1: std. -0.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 1: variation 5">
+              <source src="./static/videos/videos/mode5_set1.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 2: std. -0.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 2: variation 5">
+              <source src="./static/videos/videos/mode5_set2.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 3: std. -0.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 3: variation 5">
+              <source src="./static/videos/videos/mode5_set3.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 1: std. -1</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 1: variation 6">
+              <source src="./static/videos/videos/mode6_set1.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 2: std. -1</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 2: variation 6">
+              <source src="./static/videos/videos/mode6_set2.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 3: std. -1</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 3: variation 6">
+              <source src="./static/videos/videos/mode6_set3.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 1: std. -1.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 1: variation 7">
+              <source src="./static/videos/videos/mode7_set1.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 2: std. -1.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 2: variation 7">
+              <source src="./static/videos/videos/mode7_set2.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            <h4 class="research-video-label">Set 3: std. -1.5</h4>
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 3: variation 7">
+              <source src="./static/videos/videos/mode7_set3.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
       </div>
-    </div>
-    <!-- Animation. -->
+    </section>
+
+    <section class="research-video-section" id="generated-results" aria-labelledby="generated-results-title">
+      <!-- Edit the heading and paragraph below to change the section message. -->
+      <h3 class="title is-4 research-video-heading" id="generated-results-title">New growth trajectories sampled from the learned statistical models.</h3>
+      
+      <div class="research-video-grid">
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+         
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 1: generated sample 1">
+              <source src="./static/videos/videos/sample1_from_set1.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 2: generated sample 1">
+              <source src="./static/videos/videos/sample1_from_set2.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
         
-    <!--/ Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-    <!-- Re-rendering. -->
-        <h3 class="title is-4">Generated 4D tree models</h3>
-
-        <section class="hero is-light is-small">
-          <div class="hero-body">
-            <div class="container">
-              <div id="results-carousel" class="carousel results-carousel">
-                <div class="item item-shiba">
-                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/sample1_from_set1.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-shiba">
-                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/sample1_from_set2.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-shiba">
-                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/sample1_from_set3.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-shiba">
-                  <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/videos/sample2_from_set1.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          <figure class="research-video-card">
+            <!-- Edit this heading to change the message above this video. -->
+            
+            <video autoplay controls muted loop playsinline preload="metadata" aria-label="Set 1: generated sample 2">
+              <source src="./static/videos/videos/sample2_from_set1.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </figure>
       </div>
-    </div>
-    
-    
+    </section>
+
   </div>
 </section>
 <section class="section" id="BibTeX">
