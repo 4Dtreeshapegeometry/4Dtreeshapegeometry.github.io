@@ -132,75 +132,44 @@
   </div>
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample1_after_reg.mp4"
+<section class="section">
+
+<div class="container is-max-desktop">
+
+    <div class="column">
+      <!-- Visual Effects. -->
+	<h3 style="text-align: center; font-weight: bold;">Linear interpolation in original tree shape space after registration (shrinkage observed)</h3>
+      <div class="columns is-centered">
+          <div class="column content">
+          
+        <div class="item item-shiba" id="video-container_half">
+          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/videos/linear-original-shape-space-ground-shadow.mp4"
                     type="video/mp4">
           </video>
+          
+          </div>
         </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample2_after_reg.mp4"
-                    type="video/mp4">
-          </video>
+      </div>
+
+
+ <div class="column">
+        <h3 style="text-align: center; font-weight: bold;">Linear interpolation in SRVF space after registration (no shrinkage observed)</h3>
+        <div class="columns is-centered">
+          <div class="column content">
+        <div class="item item-shiba" id="video-container_half">
+            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/videos/linear-srvf-ground-shadow.mp4"
+                      type="video/mp4">
+            </video>
+            
         </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample10_after_reg.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample4_after_reg.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample5_after_reg.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample6_after_reg.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample7_after_reg.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample8_after_reg.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample3_after_reg.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample9_after_reg.mp4"
-                    type="video/mp4">
-          </video>
+          </div>
+
         </div>
       </div>
     </div>
-  </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -224,53 +193,20 @@
 
 <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
+    <div class="column">
+	<h3 style="text-align: center; font-weight: bold;">Before spatial registration (geodesic shrinked)</h3>
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Before spatial registration</h2>
+          
         <div class="item item-shiba" id="video-container_half">
           <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample1.mp4"
+            <source src="./static/videos/videos/sample1-before-registration-thin-ground-shadow.mp4"
                     type="video/mp4">
           </video>
           
-          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample2.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample3.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample4.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample5.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample6.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample7.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample8.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample9.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="dollyzoom" id="myVideo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/videos/sample10.mp4"
-                    type="video/mp4">
-          </video>
+          
+       
           </div>
         </div>
       </div>
@@ -278,55 +214,103 @@
 
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">After spatial registration</h2>
+        <h3 style="text-align: center; font-weight: bold;">After spatial registration (natural geodesic)</h3>
         <div class="columns is-centered">
           <div class="column content">
         <div class="item item-shiba" id="video-container_half">
             <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/videos/sample1_after_reg.mp4"
+              <source src="./static/videos/videos/sample1-after-registration-thin-ground-shadow.mp4"
                       type="video/mp4">
             </video>
             
-            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/videos/sample2_after_reg.mp4"
-                      type="video/mp4">
-            </video>
-            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/videos/sample3_after_reg.mp4"
-                      type="video/mp4">
-            </video>
-            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/videos/sample4_after_reg.mp4"
-                      type="video/mp4">
-            </video>
-            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/videos/sample5_after_reg.mp4"
-                      type="video/mp4">
-            </video>
-            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/videos/sample6_after_reg.mp4"
-                      type="video/mp4">
-            </video>
-            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/videos/sample7_after_reg.mp4"
-                      type="video/mp4">
-            </video>
-            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/videos/sample8_after_reg.mp4"
-                      type="video/mp4">
-            </video>
-            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/videos/sample9_after_reg.mp4"
-                      type="video/mp4">
-            </video>
-            <video id="matting-video" id="myVideo" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/videos/sample10_after_reg.mp4"
-                      type="video/mp4">
-            </video>
+            
         </div>
           </div>
 
         </div>
+      </div>
+    </div>
+
+ <!--/ geodesic. -->
+<div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">4D Geodesic before spatiotemporal registration</h3>
+        <div class="content has-text-justified">
+          <p>
+           We notice significant shrinkage before spatiotemporal registration.
+          </p>
+        </div>
+     
+        <div class="item item-shiba" id="video-container">
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_2_3_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_5_10_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_7_10_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_1_6_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_1_2_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                    <source src="./static/videos/videos/geod_1_4_before_reg-ezgif.com-crop-video.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+	<!-- Re-rendering. -->
+    
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">4D Geodesic after spatiotemporal registration</h3>
+        <div class="content has-text-justified">
+          <p>
+           We notice natural deforamtion between two growing 4D plants after spatiotemporal registration. 
+          </p>
+        </div>
+      
+     <div class="item item-shiba" id="video-container">
+               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                 <source src="./static/videos/videos/geod_2_3_after_reg-ezgif.com-crop-video.mp4"
+                         type="video/mp4">
+               </video>
+               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                 <source src="./static/videos/videos/geod_5_10_after_reg-ezgif.com-crop-video.mp4"
+                         type="video/mp4">
+               </video>
+               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                 <source src="./static/videos/videos/geod_7_10_after_reg-ezgif.com-crop-video.mp4"
+                         type="video/mp4">
+               </video>
+               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+                 <source src="./static/videos/videos/geod_1_6_after_reg-ezgif.com-crop-video.mp4"
+                         type="video/mp4">
+               </video>
+             <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+               <source src="./static/videos/videos/geod_1_2_after_reg-ezgif.com-crop-video.mp4"
+                       type="video/mp4">
+             </video>
+             <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
+               <source src="./static/videos/videos/geod_1_4_after_reg-ezgif.com-crop-video.mp4"
+                       type="video/mp4">
+             </video>
+             </div>
+
+        <!--/ Re-rendering. -->
       </div>
     </div>
     <!--/ Matting. -->
@@ -496,87 +480,6 @@
       </div>
     </div>
     <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h3 class="title is-4">4D Geodesic before spatiotemporal registration</h3>
-        <div class="content has-text-justified">
-          <p>
-           We notice significant shrinkage before spatiotemporal registration.
-          </p>
-        </div>
-     
-        <div class="item item-shiba" id="video-container">
-                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-                    <source src="./static/videos/videos/geod_2_3_before_reg-ezgif.com-crop-video.mp4"
-                            type="video/mp4">
-                  </video>
-                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-                    <source src="./static/videos/videos/geod_5_10_before_reg-ezgif.com-crop-video.mp4"
-                            type="video/mp4">
-                  </video>
-                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-                    <source src="./static/videos/videos/geod_7_10_before_reg-ezgif.com-crop-video.mp4"
-                            type="video/mp4">
-                  </video>
-                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-                    <source src="./static/videos/videos/geod_1_6_before_reg-ezgif.com-crop-video.mp4"
-                            type="video/mp4">
-                  </video>
-                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-                    <source src="./static/videos/videos/geod_1_2_before_reg-ezgif.com-crop-video.mp4"
-                            type="video/mp4">
-                  </video>
-                  <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-                    <source src="./static/videos/videos/geod_1_4_before_reg-ezgif.com-crop-video.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-	<!-- Re-rendering. -->
-    
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h3 class="title is-4">4D Geodesic after spatiotemporal registration</h3>
-        <div class="content has-text-justified">
-          <p>
-           We notice natural deforamtion between two growing 4D plants after spatiotemporal registration. 
-          </p>
-        </div>
-      
-     <div class="item item-shiba" id="video-container">
-               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-                 <source src="./static/videos/videos/geod_2_3_after_reg-ezgif.com-crop-video.mp4"
-                         type="video/mp4">
-               </video>
-               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-                 <source src="./static/videos/videos/geod_5_10_after_reg-ezgif.com-crop-video.mp4"
-                         type="video/mp4">
-               </video>
-               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-                 <source src="./static/videos/videos/geod_7_10_after_reg-ezgif.com-crop-video.mp4"
-                         type="video/mp4">
-               </video>
-               <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-                 <source src="./static/videos/videos/geod_1_6_after_reg-ezgif.com-crop-video.mp4"
-                         type="video/mp4">
-               </video>
-             <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-               <source src="./static/videos/videos/geod_1_2_after_reg-ezgif.com-crop-video.mp4"
-                       type="video/mp4">
-             </video>
-             <video id="shiba" id="myVideo" width="100%" height="100%" autoplay controls muted loop playsinline >
-               <source src="./static/videos/videos/geod_1_4_after_reg-ezgif.com-crop-video.mp4"
-                       type="video/mp4">
-             </video>
-             </div>
-
-        <!--/ Re-rendering. -->
-      </div>
-    </div>
         
     <!--/ Animation. -->
     <div class="columns is-centered">
